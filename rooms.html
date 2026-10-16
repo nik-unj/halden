@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rooms — Halden</title>
+  <meta name="description"
+    content="Six rooms at Halden: garden queens, a library with a fireplace, a water loft, and the Captain’s Suite." />
+  <meta name="theme-color" content="#f3eee6" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500;1,9..144,560&family=Outfit:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">Halden</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="rooms.html" aria-current="page">Rooms</a>
+        <a href="table.html">The Table</a>
+        <a href="journal.html">Journal</a>
+        <a class="nav-cta" href="inquire.html">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="masthead">
+      <div class="wrap">
+        <p class="eyebrow">Stay</p>
+        <h1>Rooms with a view, or with none, if you prefer the garden.</h1>
+        <p>Rates are for two people, before tax. A third person in the Captain’s Suite is $80. We keep three rooms for
+          dogs: the Orchard, the Boathouse Loft, and the East Room.</p>
+        <div class="filters" data-filters>
+          <button type="button" data-filter="all" aria-pressed="true">All rooms</button>
+          <button type="button" data-filter="water" aria-pressed="false">Water</button>
+          <button type="button" data-filter="garden" aria-pressed="false">Garden</button>
+          <button type="button" data-filter="suite" aria-pressed="false">Suites</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap" style="padding-bottom: 5rem">
+      <p class="empty-note" data-empty>Nothing in that group just now.</p>
+      <div class="room-list">
+        <article class="room" id="east" data-tags="garden">
+          <figure class="frame frame-room">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1400&q=80"
+              alt="A bright bedroom with white bedding in the East Room" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">Garden · Queen</p>
+            <h2>The East Room</h2>
+            <p>A corner room over the herb garden. Two windows, a writing desk, and flax linen. Best if you wake early.
+            </p>
+            <div class="room-actions">
+              <span>From $420 / night</span>
+              <button class="detail-btn" type="button" data-room-open="east">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="widows-walk" data-tags="water suite">
+          <figure class="frame frame-room">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1400&q=80"
+              alt="A warm bedroom with lamps in the Widow’s Walk" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">Water · Suite</p>
+            <h2>The Widow’s Walk</h2>
+            <p>Top of the house, with the original walk and a view that takes in the whole bay. A sitting room just
+              large enough for tea.</p>
+            <div class="room-actions">
+              <span>From $680 / night</span>
+              <button class="detail-btn" type="button" data-room-open="widows-walk">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="library" data-tags="house">
+          <figure class="frame frame-room">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1400&q=80"
+              alt="A quiet, dim bedroom in the Library" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">House · King</p>
+            <h2>The Library</h2>
+            <p>Shelves we expect you to use, a fireplace, and a king bed set away from the door. Quiet even when dinner
+              is full.</p>
+            <div class="room-actions">
+              <span>From $540 / night</span>
+              <button class="detail-btn" type="button" data-room-open="library">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="boathouse" data-tags="water">
+          <figure class="frame frame-room">
+            <img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1400"
+              alt="A wooden bed in the Boathouse Loft" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">Water · Loft</p>
+            <h2>The Boathouse Loft</h2>
+            <p>Cedar, above the old boatsheds, a short walk from the main house. You hear the tide. A breakfast tray if
+              you ask the night before.</p>
+            <div class="room-actions">
+              <span>From $610 / night</span>
+              <button class="detail-btn" type="button" data-room-open="boathouse">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="orchard" data-tags="garden">
+          <figure class="frame frame-room">
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1400&q=80"
+              alt="A simple white bedroom meant for reading" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">Garden · Queen</p>
+            <h2>The Orchard</h2>
+            <p>Our smallest room, under the apple trees. A clawfoot tub, a good lamp, and no television. Book it when
+              you mean to read.</p>
+            <div class="room-actions">
+              <span>From $390 / night</span>
+              <button class="detail-btn" type="button" data-room-open="orchard">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="captain" data-tags="suite water">
+          <figure class="frame frame-room">
+            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1400"
+              alt="The Captain’s Suite, with a wooden wardrobe and garden doors" />
+          </figure>
+          <div class="room-body">
+            <p class="eyebrow">Suite · Sea side</p>
+            <h2>The Captain’s Suite</h2>
+            <p>A bedroom, a sitting room with a daybed, and a stone soaking tub. The suite we hold for long stays and
+              for storms.</p>
+            <div class="room-actions">
+              <span>From $820 / night</span>
+              <button class="detail-btn" type="button" data-room-open="captain">Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <dialog data-dialog aria-labelledby="dialog-title">
+    <div class="dialog-media">
+      <img data-dialog-image alt="" />
+    </div>
+    <div class="dialog-body">
+      <div class="dialog-top">
+        <div>
+          <p class="eyebrow" data-dialog-kind></p>
+          <h2 id="dialog-title" data-dialog-title></h2>
+        </div>
+        <button class="icon-btn" type="button" data-dialog-close aria-label="Close">×</button>
+      </div>
+      <p data-dialog-copy style="margin-top: 0.8rem"></p>
+      <ul class="amenity-list" data-dialog-amenities></ul>
+      <p class="meta" style="margin-top: 0"><span data-dialog-price></span><span data-dialog-sleeps></span></p>
+      <p style="margin-top: 1.25rem"><a class="btn" data-dialog-book href="inquire.html">Inquire about this room</a></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Halden</h2>
+        <p>18 Headland Road<br />Cape Rosalie, Maine</p>
+      </div>
+      <div>
+        <p class="footer-title">Visit</p>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="table.html">The Table</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="inquire.html">Inquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">House</p>
+        <ul>
+          <li>Check-in from 3pm</li>
+          <li>Check-out by 11am</li>
+          <li>Dinner from 6:30pm</li>
+          <li>Front desk · (207) 555-0148</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">The seasonal note</p>
+        <p>A short letter when the menu changes. No weekly noise.</p>
+        <form class="newsletter" data-newsletter>
+          <label class="sr-only" for="footer-email">Email</label>
+          <input id="footer-email" type="email" required placeholder="Email address" />
+          <button type="submit">Join</button>
+        </form>
+        <p class="form-note" data-newsletter-note></p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© <span data-year>2026</span> Halden House</span>
+      <span>A fictional inn, designed as a portfolio project.</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

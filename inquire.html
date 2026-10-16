@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inquire — Halden</title>
+  <meta name="description" content="Ask about a room or a table at Halden, a house hotel in Cape Rosalie, Maine." />
+  <meta name="theme-color" content="#f3eee6" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500;1,9..144,560&family=Outfit:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="inner">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">Halden</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="rooms.html">Rooms</a>
+        <a href="table.html">The Table</a>
+        <a href="journal.html">Journal</a>
+        <a class="nav-cta" href="inquire.html" aria-current="page">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="masthead">
+      <div class="wrap">
+        <p class="eyebrow">Plan a stay</p>
+        <h1>Write to the house.</h1>
+        <p>Tell us the dates and the room if you know it. We reply within a day. Nothing is held until we write back.
+        </p>
+      </div>
+    </header>
+
+    <div class="wrap inquire-grid">
+      <aside>
+        <div class="facts-stack">
+          <div>
+            <strong>Check-in</strong>
+            <span>From 3pm. Earlier only if the room is already ready.</span>
+          </div>
+          <div>
+            <strong>Check-out</strong>
+            <span>By 11am. Coffee is still out if you are slow about it.</span>
+          </div>
+          <div>
+            <strong>Dinner</strong>
+            <span>One sitting at 6:30. Say so below if you want a chair.</span>
+          </div>
+          <div>
+            <strong>Dogs</strong>
+            <span>The East Room, the Orchard, and the Boathouse Loft. Two at most.</span>
+          </div>
+          <div>
+            <strong>Front desk</strong>
+            <span>18 Headland Road, Cape Rosalie<br />(207) 555-0148</span>
+          </div>
+        </div>
+      </aside>
+
+      <div>
+        <form data-inquiry novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <p class="error"></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="arrival">Arrival</label>
+              <input id="arrival" name="arrival" type="date" required />
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label for="departure">Departure</label>
+              <input id="departure" name="departure" type="date" required />
+              <p class="error"></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="room">Room</label>
+              <select id="room" name="room">
+                <option value="">No preference</option>
+                <option value="east">The East Room</option>
+                <option value="widows-walk">The Widow’s Walk</option>
+                <option value="library">The Library</option>
+                <option value="boathouse">The Boathouse Loft</option>
+                <option value="orchard">The Orchard</option>
+                <option value="captain">The Captain’s Suite</option>
+              </select>
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <p class="error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Note</label>
+            <textarea id="message" name="message"
+              placeholder="A dog, a table for dinner, the long light in October."></textarea>
+            <p class="error"></p>
+          </div>
+          <button class="btn" type="submit">Send the inquiry</button>
+          <p class="form-note">Demonstration only. This stays in your browser and is not sent anywhere.</p>
+        </form>
+
+        <div class="success" data-success>
+          <p class="eyebrow">Received</p>
+          <h2>We have your note.</h2>
+          <p>In a working inn this would reach the front desk, and someone would write back within a day. This one is a
+            portfolio demo, so the message stopped here.</p>
+          <p style="margin-top: 1.25rem"><a class="text-link" href="rooms.html">Look at the rooms again</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Halden</h2>
+        <p>18 Headland Road<br />Cape Rosalie, Maine</p>
+      </div>
+      <div>
+        <p class="footer-title">Visit</p>
+        <ul>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="table.html">The Table</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="inquire.html">Inquire</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">House</p>
+        <ul>
+          <li>Check-in from 3pm</li>
+          <li>Check-out by 11am</li>
+          <li>Dinner from 6:30pm</li>
+          <li>Front desk · (207) 555-0148</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">The seasonal note</p>
+        <p>A short letter when the menu changes. No weekly noise.</p>
+        <form class="newsletter" data-newsletter>
+          <label class="sr-only" for="footer-email">Email</label>
+          <input id="footer-email" type="email" required placeholder="Email address" />
+          <button type="submit">Join</button>
+        </form>
+        <p class="form-note" data-newsletter-note></p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© <span data-year>2026</span> Halden House</span>
+      <span>A fictional inn, designed as a portfolio project.</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
